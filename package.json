@@ -7,7 +7,7 @@
     "start": "node server",
     "dev": "nodemon server"
   },
-  "author": "@IkerMarcor (w. Dave Gray)",
+  "author": "@IkerMarcor (w. Dave Gray) test",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
