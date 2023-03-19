@@ -1,18 +1,21 @@
 {
-  "name": "Express tutorial",
-  "version": "2.0.0",
-  "description": "Organized everything better",
+  "name": "MongoDB tutorial",
+  "version": "3.0.0",
+  "description": "Using the same WebStructure but with MongoDB (first step: test the connection)",
   "main": "server.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server"
   },
-  "author": "@IkerMarcor (w. Dave Gray) test",
+  "author": "@IkerMarcor (w. Dave Gray)",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "date-fns": "^2.23.0",
+    "dotenv": "^16.0.3",
     "express": "^4.17.1",
+    "mongoose": "^7.0.2",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
