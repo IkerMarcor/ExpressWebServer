@@ -1,6 +1,6 @@
 {
   "name": "MongoDB tutorial",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Using the same WebStructure but with MongoDB (first step: test the connection)",
   "main": "server.js",
   "scripts": {

@@ -1,14 +1,10 @@
 const bcrypt = require('bcrypt');
-
-const usersDB = {
-    users: require('../model/users.json'),
-    setUsers: function (data) { this.users = data }
-}
+const User = require("../model/User");
 
 const handleLogin = async (req, res) => {
     const { user, pwd } = req.body;
     if (!user || !pwd) return res.status(404).json({'message': 'Username and password are required.'});
-    const foundUser = usersDB.users.find(person => person.username === user);
+    const foundUser = await User.findOne({username: user}).exec();
     if (!foundUser) return res.sendStatus(401); // Unauthorized
     // evaluate password 
     const match = await bcrypt.compare(pwd, foundUser.password);
